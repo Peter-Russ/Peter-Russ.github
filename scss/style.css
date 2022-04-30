@@ -8,14 +8,32 @@ body {
           box-sizing: border-box;
 }
 
+#logo-long {
+  width: 12%;
+  height: auto;
+  position: fixed;
+  top: 14px;
+  left: 30px;
+  float: left;
+}
+
+#logo-short {
+  width: 7%;
+  height: auto;
+  position: fixed;
+  top: 12px;
+  right: 22px;
+  float: left;
+}
+
 #header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -24,11 +42,16 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: #000000;
+  position: relative;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
 }
 
 #destop-nav {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -47,20 +70,47 @@ body {
   position: relative;
 }
 
-.nav-item a {
+.nav-item {
+  padding: 0.7rem;
+  white-space: nowrap;
   color: #a4a4a5;
-  font-size: 0.9rem;
-  text-decoration: none;
 }
 
-.nav-item a:hover {
-  color: #fff;
+.nav-item:hover {
+  border-bottom: 2px solid #D83C26;
+  cursor: pointer;
+  -webkit-animation-name: navbar-item-color;
+          animation-name: navbar-item-color;
+  -webkit-animation: navbar-item-color 0.5s forwards;
+          animation: navbar-item-color 0.5s forwards;
 }
 
-#nav-hr {
+@-webkit-keyframes navbar-item-color {
+  from {
+    color: #a4a4a5;
+  }
+  to {
+    color: #fff;
+  }
+}
+
+@keyframes navbar-item-color {
+  from {
+    color: #a4a4a5;
+  }
+  to {
+    color: #fff;
+  }
+}
+
+#nav-hr-div {
   width: 100%;
   background-color: #D83C26;
   padding: 0.07rem;
   margin: 0;
+}
+
+#header-img {
+  margin-top: 4.5rem;
 }
 /*# sourceMappingURL=style.css.map */
