@@ -132,6 +132,11 @@ body {
   margin-top: 4.5rem;
 }
 
+#destop-nav #current-site {
+  border-bottom: 2px solid #D83C26;
+  color: #fff;
+}
+
 #intro-headline {
   margin-top: 2rem;
   font-size: 2rem;
