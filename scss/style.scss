@@ -2,12 +2,22 @@ $primary: #D83C26;
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:  Arial, Helvetica, sans-serif; // Brandon Text maybe als font
   }
 
 * {
     box-sizing: border-box;
 }
+
+.wrapper-large {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 1440px;
+    margin: 0 auto;
+}
+
+// === Navbar === //
 
 #logo-long {
     width: 12%;
@@ -51,6 +61,10 @@ body {
     height: 4.5rem;
     padding-top: 1rem;
     position: relative;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .nav-item {
@@ -62,7 +76,6 @@ body {
 
 .nav-item:hover {
    border-bottom: 2px solid $primary;
-//    color: #fff;
    cursor: pointer;
    animation-name: navbar-item-color;
    animation: navbar-item-color 0.5s forwards;
@@ -75,7 +88,6 @@ body {
 }
 
 
-
 #nav-hr-div {
     width: 100%;
     background-color: $primary;
@@ -85,4 +97,12 @@ body {
 
 #header-img {
     margin-top: 4.5rem;
+}
+
+// === Intro-Text ==  //
+
+#intro-headline {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
 }

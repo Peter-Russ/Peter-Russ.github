@@ -8,6 +8,20 @@ body {
           box-sizing: border-box;
 }
 
+.wrapper-large {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1440px;
+  margin: 0 auto;
+}
+
 #logo-long {
   width: 12%;
   height: auto;
@@ -70,6 +84,10 @@ body {
   position: relative;
 }
 
+#destop-nav a {
+  text-decoration: none;
+}
+
 .nav-item {
   padding: 0.7rem;
   white-space: nowrap;
@@ -112,5 +130,11 @@ body {
 
 #header-img {
   margin-top: 4.5rem;
+}
+
+#intro-headline {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
